@@ -7,22 +7,7 @@ import { Home } from './components/Home/Home';
 import { About } from './components/About/About';
 import { Services } from './components/Services/Services';
 import { Contact } from './components/Contact/Contact';
-
-// const App = () => {
-//   return (
-//     <div className={styles.App}>
-//       <Router>
-//         <Navbar />
-//         <Routes>
-//           <Route path="/" element={<Home />} />
-//           <Route path="/about" element={<About />} />
-//           <Route path="/services" element={<Services />} />
-//           <Route path="/contact" element={<Contact />} />
-//         </Routes>
-//       </Router>
-//     </div>
-//   );  
-// };
+import { Footer } from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -32,6 +17,7 @@ const App = () => {
         <Services />
         <About />
         <Contact />
+        <Footer />
     </div>
   );  
 };
