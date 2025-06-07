@@ -1,0 +1,12 @@
+:root {
+  /* Colours */
+  --color-text: #ffffff; /* pure white */
+  --color-primary: #d4af37; /* fancy gold - metallic gold */
+  --color-secondary: #b58818; /* darker gold tone for contrast */
+  --color-dark: #6f5700; /* rich dark gold / brownish gold */
+  --color-bg: #ffffff; /* keep dark blue background or change if you want */
+
+
+  /* Fonts */
+  --font-roboto: "Roboto";
+}

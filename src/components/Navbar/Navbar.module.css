@@ -1,0 +1,105 @@
+@import "../../vars.css";
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 40px; /* Top/Bottom: 5px, Left/Right: 40px */
+  z-index: 2;
+  background-color: var(--color-bg);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* .title {
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-primary);
+} */
+
+.logo img {
+  height: auto; /* Allow the height to adjust dynamically */
+  max-height: 80px; /* Set a maximum height for flexibility */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.menuBtn {
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menuItems {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  margin-right: 50px;
+  padding: 0;
+}
+
+.menuItems a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+
+.menuItems a:hover {
+  color: #FFD700; /* Fancy gold hover */
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 830px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo img {
+    align-items: center;
+  }
+
+  .menu {
+    position: absolute;
+    left: 0;
+    margin-left: 5%;
+    padding-top: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 11px;
+    z-index: 3;
+  }
+
+
+  .menuBtn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menuItems {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    background: var(--color-bg);
+    padding: 20px 30px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 6px rgba(0, 0, 0, 0.25); */
+  }
+
+  .menuOpen {
+    display: flex;
+    z-index: 1;
+    transform: translateX(0); /* Slide the menu into view */
+  }
+}
