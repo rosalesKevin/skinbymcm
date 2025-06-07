@@ -30,8 +30,8 @@ const App = () => {
         <Navbar />
         <Home />
         <Services />
-        {/* <About /> */}
-        {/* <Contact /> */}
+        <About />
+        <Contact />
     </div>
   );  
 };
